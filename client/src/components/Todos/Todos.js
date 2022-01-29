@@ -8,7 +8,7 @@ const Todos = (props) => {
     const ref = useRef()
 
     const remove = async () => {
-        await axios.delete(`/todo/${props.todo.id}`)
+        await axios.delete(`/todos/${props.todo.id}`)
         props.setSuccess(true)
     }
        

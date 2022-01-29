@@ -11,11 +11,11 @@ app.use(cors())
 app.use(body_parser.json())
 app.use(body_parser.urlencoded({ extended: false }));
 
-app.get('/todo', (req, res) => {
+app.get('/todos', (req, res) => {
     res.send(todos)
     console.log(todos)
 })
-app.delete('/todo/:id', (req, res) => {
+app.delete('/todos/:id', (req, res) => {
     const { id } = req.params
     for (let i = 0; i < todos.length; i++) {
         if (todos[i].id === id) {

@@ -11,7 +11,7 @@ const App = () => {
   const [success, setSuccess] = useState()
 
   useEffect(() => {
-    axios.get("/todo").then(response => {
+    axios.get("/todos").then(response => {
       const data = response.data
       setTodos(data.reverse())
       setSuccess()
