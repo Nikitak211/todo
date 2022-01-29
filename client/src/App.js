@@ -24,9 +24,9 @@ const App = () => {
         <CreateTodo setSuccess={setSuccess} />
       </div>
       <div className="Todos">
-        {todos.map((todo) => {
+        {todos[0] !== undefined ? (todos.map((todo) => {
           return <Todos key={todo.id} setSuccess={setSuccess} todo={todo} />
-        })}
+        })) : (<></>)}
       </div>
     </div>
   );
