@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import {useState} from 'react';
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
 
@@ -7,7 +7,8 @@ import './CreateTodo.css'
 const CreateTodo = (props) => {
     const {
         register,
-        handleSubmit
+        handleSubmit,
+        reset
     } = useForm();
 
     const createTodo = async (data) => {
@@ -25,6 +26,10 @@ const CreateTodo = (props) => {
                 body:data.body
             }
             createTodo(todo)
+            reset({
+                title: '',
+                body:''
+            })
         })}>
         <div className="todo-form">
             <input 
