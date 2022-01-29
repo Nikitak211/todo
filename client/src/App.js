@@ -25,7 +25,7 @@ const App = () => {
       </div>
       <div className="Todos">
         {todos.map((todo) => {
-          return <Todos key={todo.time} setSuccess={setSuccess} todo={todo} />
+          return <Todos key={todo.id} setSuccess={setSuccess} todo={todo} />
         })}
       </div>
     </div>

@@ -5,11 +5,11 @@ import './Todos.css'
 
 const Todos = (props) => {
     const remove = async () => {
-        await axios.post('/todo',props.todo)
+        await axios.delete(`/todo/${props.todo.id}`)
         .then(response => {
             const data = response.data
-            props.setSuccess(data.success)
         })
+        props.setSuccess(true)
     }
     
     return ( 

@@ -22,8 +22,7 @@ const CreateTodo = (props) => {
         <form onSubmit={handleSubmit((data)=>{
             const todo = {
                 title:data.title,
-                body:data.body,
-                time: new Date()
+                body:data.body
             }
             createTodo(todo)
         })}>
