@@ -1,0 +1,18 @@
+.todo-container{
+    background-color: rgb(95, 95, 95);
+    display:grid;
+}
+.todo-title{
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+    height: 2em;
+    margin: 0 auto;
+}
+.todo-container textarea{
+    outline: none;
+    border:none;
+    background-color:transparent;
+    color: black;
+    resize: none;
+}

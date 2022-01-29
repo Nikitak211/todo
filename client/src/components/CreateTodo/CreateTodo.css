@@ -1,0 +1,23 @@
+.todo-form {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 200px;
+    height: fit-content;
+    background-color:transparent;
+    display:grid;
+    gap:5px;
+}
+.todo-form input {
+    border: none;
+    border-radius:5px 5px 0 0;
+}
+.todo-form textarea {
+    border: none;
+    resize:none;
+}
+.todo-form button {
+    border: none;
+    border-radius:0 0 5px 5px;
+    background-color:rgb(146, 209, 141);
+    width: 100%;
+}
